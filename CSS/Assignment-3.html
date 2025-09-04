@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    #restaurant {
+        display: flex;
+        justify-content: center;
+        gap: 30px; /* space between cards */
+    }
+
+    .card {
+        width: 220px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        text-align: center;
+        padding: 15px;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .card p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #333;
+    }
+   </style>
+</head>
+<body>
+    <div id="restaurant">
+
+        <div class="card">
+            <img src="pizza-recipe-1.jpg" alt="Pizza">
+            <p>very healthy and cheezy</p>
+        </div>
+
+        <div class="card">
+            <img src="vegetable-sandwich-recipe.jpg" alt="Sandwich">
+            <p>green vegetable-sandwich-recipe for your diet</p>
+        </div>
+
+        <div class="card">
+            <img src="Secret-Veg-Cheeseburgers-c981dd6.jpg" alt="Burger">
+            <p>Secret-Veg-Cheeseburgers keeps the dr away</p>
+        </div>
+
+    </div>
+</body>
+</html>
