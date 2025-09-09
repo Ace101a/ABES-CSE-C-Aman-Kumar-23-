@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Timetable with CSS Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .timetable {
+      display: grid;
+      grid-template-columns: 120px repeat(5, 1fr);
+      grid-auto-rows: 60px;
+      border: 2px solid #333;
+      text-align: center;
+    }
+
+    .timetable div {
+      border: 1px solid #999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .header {
+      background: #333;
+      color: white;
+      font-weight: bold;
+    }
+
+    .time {
+      background: #f3f3f3;
+      font-weight: bold;
+    }
+
+    .subject {
+      background: #e8f5e9;
+    }
+  </style>
+</head>
+<body>
+  <h2>Weekly Timetable</h2>
+
+  <div class="timetable">
+    <!-- Header -->
+    <div class="header">Time</div>
+    <div class="header">Monday</div>
+    <div class="header">Tuesday</div>
+    <div class="header">Wednesday</div>
+    <div class="header">Thursday</div>
+    <div class="header">Friday</div>
+
+    <!-- Row 1 -->
+    <div class="time">9:00 - 10:00</div>
+    <div class="subject">Math</div>
+    <div class="subject">English</div>
+    <div class="subject">Physics</div>
+    <div class="subject">Chemistry</div>
+    <div class="subject">Biology</div>
+
+    <!-- Row 2 -->
+    <div class="time">10:00 - 11:00</div>
+    <div class="subject">English</div>
+    <div class="subject">Math</div>
+    <div class="subject">Chemistry</div>
+    <div class="subject">Biology</div>
+    <div class="subject">Physics</div>
+
+    <!-- Row 3 -->
+    <div class="time">11:00 - 12:00</div>
+    <div class="subject">Physics</div>
+    <div class="subject">Biology</div>
+    <div class="subject">Math</div>
+    <div class="subject">English</div>
+    <div class="subject">Chemistry</div>
+
+    <!-- Row 4 -->
+    <div class="time">12:00 - 1:00</div>
+    <div class="subject">Break</div>
+    <div class="subject">Break</div>
+    <div class="subject">Break</div>
+    <div class="subject">Break</div>
+    <div class="subject">Break</div>
+
+    <!-- Row 5 -->
+    <div class="time">1:00 - 2:00</div>
+    <div class="subject">Chemistry</div>
+    <div class="subject">Physics</div>
+    <div class="subject">English</div>
+    <div class="subject">Math</div>
+    <div class="subject">Biology</div>
+  </div>
+</body>
+</html>
