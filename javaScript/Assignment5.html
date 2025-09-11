@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background: blueviolet;
+      color: white;
+    }
+    header img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    #count {
+      font-size: 60px;
+      margin: 40px 0 20px;
+    }
+    button {
+      font-size: 25px;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #clickImg {
+      width: 200px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images.jpg" alt="Logo">
+    <h1>Counter App</h1>
+  </header>
+
+  <div id="count">0</div>
+  <button onclick="increase()">+</button>
+  <button onclick="decrease()">-</button>
+
+  <!-- Another image (click to hide) -->
+  <div>
+    <img src="download (4).jpg" alt="Click to Hide" id="clickImg">
+  </div>
+
+  <script>
+    let count = 0;
+    const display = document.getElementById("count");
+    const clickImg = document.getElementById("clickImg");
+
+    function increase() {
+      if (count < 10) {
+        count++;
+        display.innerText = count;
+      } else {
+        alert("Maximum Limit 10");
+      }
+    }
+
+    function decrease() {
+      if (count > 0) {
+        count--;
+        display.innerText = count;
+      } else {
+        alert("Minimum Limit 0");
+      }
+    }
+
+    // Hide image when clicked
+    clickImg.onclick = function() {
+      clickImg.style.display = "none";
+    };
+  </script>
+</body>
+</html>
