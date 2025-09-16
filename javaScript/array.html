@@ -10,10 +10,23 @@
 <body>
     <p id="ace"></p>
     <script>
-        var car=["car1","car2","car3"];
-        // document.write(car);
-        car[0]="Mango";
-        document.getElementById("ace").innerHTML=car;
+        const person={
+            fname:"Aman",
+            lname:"Rana",
+            age:20
+        };
+        document.getElementById("ace").innerHTML=person.fname;
     </script>
+
+
+    <!-- <p id="ace"></p>
+    <script>
+        // var car=["car1","car2","car3"];
+        // // document.write(car);
+        // car[0]="Mango";
+        // document.getElementById("ace").innerHTML=car[1];
+        var car=new Array("Ace","Sabo","Luffy");
+        document.getElementById("ace").innerHTML=car;
+    </script> -->
 </body>
 </html>
