@@ -35,7 +35,7 @@
       border-radius: 8px;
       cursor: pointer;
     }
-    #clickImg {
+    #myImg {
       width: 200px;
       margin-top: 20px;
       cursor: pointer;
@@ -52,15 +52,13 @@
   <button onclick="increase()">+</button>
   <button onclick="decrease()">-</button>
 
-  <!-- Another image (click to hide) -->
   <div>
-    <img src="download (4).jpg" alt="Click to Hide" id="clickImg">
+    <img src="https://via.placeholder.com/200" alt="Click to Hide" id="myImg">
   </div>
 
   <script>
     let count = 0;
     const display = document.getElementById("count");
-    const clickImg = document.getElementById("clickImg");
 
     function increase() {
       if (count < 10) {
@@ -80,9 +78,8 @@
       }
     }
 
-    // Hide image when clicked
-    clickImg.onclick = function() {
-      clickImg.style.display = "none";
+    document.getElementById("myImg").onclick = function() {
+      document.getElementById("myImg").style.display = "none";
     };
   </script>
 </body>
