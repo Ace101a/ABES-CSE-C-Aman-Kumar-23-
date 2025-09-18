@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+         }
+         .cards{
+            height: 500px;
+            width: 340px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+            
+         }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            
+                 <p id="ace"></p>
+                 <p id="st2"></p>
+                 <p id="st3"></p>
+        </div>
+        <div class="cards">
+                 <p id="aman"></p>
+                 <p id="st5"></p>
+        </div>
+
+
+        
+    </div>
+     
+    <script>
+        const student1={
+            name:"Aman",
+            roll:21,
+            branch:"CSE"
+        }
+        const student2={
+            name:"Aman",
+            roll:21,
+            branch:"CSE"
+        }
+        const student3={
+            name:"Aman",
+            roll:21,
+            branch:"CSE"
+        }
+        const student4={
+            name:"Aman",
+            roll:21,
+            branch:"CS"
+        }
+        const student5={
+            name:"Aman",
+            roll:21,
+            branch:"IT"
+        }
+        document.getElementById("ace").innerHTML=Match_student;
+
+    </script>
+</body>
+</html>
