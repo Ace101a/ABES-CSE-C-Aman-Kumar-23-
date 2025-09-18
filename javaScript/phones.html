@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .cards {
+            height: 500px;
+            width: 340px;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+        }
+        .cards img {
+            width: 100%;       
+            height: 50%;        
+            object-fit: cover;
+        }    
+        .cards h2 {
+            font-size: x-large;
+            margin-top: 10px;
+        }
+        .textarea {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <img src="phone.jpeg" alt="Bulb">
+            <div class="textarea">
+                <p id="card1"></p>  
+            </div>
+        </div>
+        <div class="cards">
+            <img src="phone.jpeg" alt="Bulb">
+            <div class="textarea">
+            <p id="card2"></p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="phone.jpeg" alt="Bulb">
+            <div class="textarea">
+             <p id="card3"></p>
+            </div>
+        </div>
+    </div>
+         <script>
+        
+                const obj1=new Object({
+                      Apple:"i phone 17 ",
+                      variant:"12/512 gb"
+
+                })
+                document.getElementById("card1").innerHTML=JSON.stringify(obj1);
+
+                const obj2=new Object({
+                      GOOGLE:"GOOGLE PIXEL 8 ",
+                      variant:"12/512 gb"
+
+                })
+                document.getElementById("card2").innerHTML=JSON.stringify(obj2);
+
+                const obj3=new Object({
+                      SAMSUNG:"S25 ULTRA ",
+                      variant:"12/512 gb"
+
+                })
+                document.getElementById("card3").innerHTML=JSON.stringify(obj3);
+               
+              
+     </script>
+</body>
+</html>

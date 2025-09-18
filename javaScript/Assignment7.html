@@ -1,0 +1,197 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+         }
+         .cards{
+            height: 400px;
+            width: 340px;
+            background-color: white;
+            border-radius: 10%;
+            display: flex;
+            flex-direction: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+            
+         }
+        img{
+            width: 100%;
+            height: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <img src="phone.jpeg">
+                <p id="card1"></p>
+              <button><a href="phones.html">MORE...</a></button>
+                
+        </div>
+        <div class="cards">
+                <img src="tv.jpeg">
+                 <button><a href="tv.html">MORE...</a></button>
+        </div>
+
+        <div class="cards">
+                <img src="watchess.jpeg">
+                 <button><a href="watches.html">MORE...</a></button>
+        </div>
+
+
+
+        
+    </div>
+     
+   
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .cards {
+            height: 500px;
+            width: 340px;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+        }
+        .cards img {
+            width: 100%;       
+            height: 50%;        
+            
+        }    
+        .cards h2 {
+            font-size: x-large;
+            margin-top: 10px;
+        }
+        .textarea {
+            padding: 15px;
+        }
+        header {
+      background: #2874f0;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+    .logo span {
+      font-size: 11px;
+      font-weight: normal;
+      color: #ffe500;
+    }
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+      position: relative;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 10px 40px 10px 40px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+    .search-bar i {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translateY(-50%);
+      color: gray;
+    }
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .nav-links a i {
+      font-size: 16px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">
+      AmanKart
+      <span>Explore <b>Plus</b> ✨</span>
+    </div>
+    <div class="search-bar">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Search for Products, Brands and More">
+    </div>
+    <div class="nav-links">
+      <a href="#"><i class="fa fa-user"></i> Login <i class="fa fa-caret-down"></i></a>
+      <a href="#"><i class="fa fa-shopping-cart"></i> Cart</a>
+      <a href="#"><i class="fa fa-store"></i> Become a Seller</a>
+      <div class="menu-overflow-icon"><i class="fas fa-ellipsis-v"></i></div>
+    </div>
+  </header>
+    <div class="container">
+        <div class="cards">
+             <img src="phone.jpeg">
+
+              <button><a href="phones.html">MORE...</a></button>
+                
+        </div>
+        <div class="cards">
+            <img src="tv.jpeg" alt="Bulb">
+           <button><a href="tv.html">MORE...</a></button>
+        </div>
+        <div class="cards">
+            <img src="watchess.jpeg">
+                 <button><a href="watches.html">MORE...</a></button>
+        </div>
+    </div>
+</body>
+</html>
