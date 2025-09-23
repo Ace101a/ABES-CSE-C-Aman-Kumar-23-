@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Short Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      background: #f5f5f5;
+      padding: 10px 20px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    header img {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      margin-left: 15px;
+      font-size: 20px;
+    }
+
+    .content {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar with image on left -->
+  <header>
+    <img src="watchess.jpeg" alt="Logo">
+    <h1>Short Resume Generator</h1>
+  </header>
+
+  <div class="content">
+    <h2>Enter Your Details</h2>
+
+    <label>Name: </label>
+    <input type="text" id="name"><br><br>
+
+    <label>Role: </label>
+    <input type="text" id="role"><br><br>
+
+    <label>Skills: </label>
+    <input type="text" id="skills" placeholder="Comma separated"><br><br>
+
+    <label>Experience (Years): </label>
+    <input type="number" id="exp"><br><br>
+
+    <button onclick="generateResume()">Generate Resume</button>
+
+    <h2>Your Resume</h2>
+    <p id="resume"></p>
+  </div>
+
+  <script>
+    function generateResume() {
+      let name = document.getElementById("name").value;
+      let role = document.getElementById("role").value;
+      let skills = document.getElementById("skills").value;
+      let exp = document.getElementById("exp").value;
+
+      let resumeText = `
+        <strong>${name}</strong><br>
+        Role: ${role}<br>
+        Skills: ${skills}<br>
+        Experience: ${exp} years
+      `;
+
+      document.getElementById("resume").innerHTML = resumeText;
+    }
+  </script>
+</body>
+</html>
